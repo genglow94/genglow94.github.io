@@ -81,7 +81,7 @@ p, li {
 }
 
 .profile-container img {
-  max-width: 20%; /* 横幅を50%に制限 */
+  max-width: 20%; /* 横幅を20%に制限 */
   border-radius: 20%; /* 丸くする（オプション） */
 }
 
@@ -107,6 +107,58 @@ p, li {
   margin-top: 1em; /* 上部に余白を追加 */
   border: 1px solid #cccccc; /* 動画の枠線（オプション） */
   border-radius: 8px; /* 動画の角を丸くする（オプション） */
+}
+
+#pokemon-card-history {
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+
+.history-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  gap: 15px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 15px;
+}
+
+/* 年月を強調 */
+.date {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #2196f3;
+  margin-bottom: 10px;
+}
+
+/* 左側のコンテンツ */
+.history-content {
+  flex: 2;
+}
+
+/* 右側の画像 */
+.history-image {
+  flex: 1;
+  text-align: right;
+}
+
+.history-image img {
+  max-width: 100%;   /* コンテナの幅に合わせる */
+  max-height: 250px; /* 縦長写真の高さ制限 */
+  object-fit: cover; /* サイズ調整で切り抜きを防止 */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.subtitle {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+  margin: 5px 0;
+  padding-left: 10px; /* 見出しの階層感を表現 */
+  border-left: 4px solid #2196f3; /* 左側に色付きラインを追加 */
 }
 
 footer {
